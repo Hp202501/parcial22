@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fortnite — TiendaPlay</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="../index.html">
+        <div class="logo">GG</div>
+        <div>
+          <h1>TiendaPlay</h1>
+          <p>Descargas oficiales — PC & Android</p>
+        </div>
+      </a>
+      <div class="searchbar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.6)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.6)" stroke-width="1.6"/>
+        </svg>
+        <input id="searchTop" type="search" placeholder="Buscar juegos..." />
+        <button class="btn" onclick="location.href='../index.html#q='+encodeURIComponent(document.getElementById('searchTop').value)">Buscar</button>
+      </div>
+    </header>
+    <nav class="main-menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../index.html#Android">Juegos Android</a>
+      <a href="../index.html#PC">Juegos PC</a>
+      <a href="../about.html">Acerca de</a>
+    </nav>
+
+    <div class="breadcrumbs"></div>
+    <div class="back-row"><a href="../index.html" class="back-btn">Volver</a></div>
+
+    <div class="hero-detail">
+      <video class="bgvid" src="https://cdn2.unrealengine.com/fortnite-chapter-5-season-3-battle-pass-trailer-1080p-3252d63a2d22.mp4" autoplay muted loop playsinline></video>
+      <div class="overlay">
+        <div class="poster"><img src="https://cdn2.unrealengine.com/fg-ss3-3840x2160-0d7c927dbc14.jpg" alt="Fortnite" style="width:100%;height:auto;display:block"></div>
+        <div class="info">
+          <h2 style="margin:0">Fortnite</h2>
+          <div class="badges">
+            <span class="tag">PC</span>
+            <span class="tag">Battle Royale</span>
+            <span class="tag">Gratis</span>
+          </div>
+          <div class="inline-actions">
+            <a class="download" href="https://www.epicgames.com/fortnite/download" target="_blank" rel="noopener">Descargar oficial</a>
+            <div class="rating" aria-label="Valoración 4.1 de 5">★★★★☆ (4.1)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h3>Acerca de</h3>
+      <p style="color:#c9d4e5"><strong>Fortnite</strong> es un título de género Battle Royale disponible en PC. Esta ficha es demostrativa: agrega aquí información clave como modalidades de juego, características destacadas y notas del desarrollador.</p>
+    </section>
+
+    <section class="section">
+      <h3>Reproductor de video</h3>
+      <div class="player" id="player">
+        <video src="https://cdn2.unrealengine.com/fortnite-chapter-5-season-3-battle-pass-trailer-1080p-3252d63a2d22.mp4" playsinline></video>
+        <div class="controls">
+          <button class="ctrl-btn btn-play">Reproducir</button>
+          <button class="ctrl-btn btn-mute">Mute</button>
+          <input class="seek" type="range" min="0" max="0" step="0.1" value="0" />
+          <div class="time"><span class="cur">00:00</span> / <span class="dur">--:--</span></div>
+          <button class="ctrl-btn btn-fs">Pantalla completa</button>
+        </div>
+      </div>
+      <script>initPlayer(document.getElementById('player'));</script>
+    </section>
+
+    <section class="section">
+      <h3>Visuales del juego</h3>
+      <div id="gallerySlider" class="slider">
+        <div class="slider-track">
+          <div class="slide"><img src="https://cdn2.unrealengine.com/fg-ss3-3840x2160-0d7c927dbc14.jpg" alt="Visual 1"></div>
+          <div class="slide"><img src="https://cdn2.unrealengine.com/fg-ss3-3840x2160-0d7c927dbc14.jpg" alt="Visual 2"></div>
+          <div class="slide"><img src="https://cdn2.unrealengine.com/fg-ss3-3840x2160-0d7c927dbc14.jpg" alt="Visual 3"></div>
+          <div class="slide"><img src="https://cdn2.unrealengine.com/fg-ss3-3840x2160-0d7c927dbc14.jpg" alt="Visual 4"></div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="sbtn prev">◀</button>
+        <button class="sbtn next">▶</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Historia</h3>
+      <p class="muted">Resumen narrativo de ambientación y trasfondo del juego. Describe el mundo, la época, los personajes y el conflicto principal. Reemplaza este texto por tu sinopsis propia.</p>
+    </section>
+
+    <section class="section">
+      <h3>Configuración (Requisitos mínimos)</h3>
+      
+<table>
+  <tr><td>SO</td><td>Windows 10/11 64-bit</td></tr>
+  <tr><td>CPU</td><td>Intel i5 / Ryzen 3</td></tr>
+  <tr><td>RAM</td><td>8 GB</td></tr>
+  <tr><td>GPU</td><td>NVIDIA GTX 960 / RX 560</td></tr>
+  <tr><td>Almacenamiento</td><td>25 GB</td></tr>
+</table>
+
+    </section>
+
+    <section class="section">
+      <h3>Juegos relacionados</h3>
+      <div id="relatedSlider" class="slider">
+        <div class="slider-track">
+          <div class="slide"><a href="detail-1.html"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/570/header.jpg" alt="Dota 2"><div class="caption">Dota 2 • PC</div></a></div><div class="slide"><a href="detail-2.html"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/230410/header.jpg" alt="Warframe"><div class="caption">Warframe • PC</div></a></div><div class="slide"><a href="detail-3.html"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/730/header.jpg" alt="Counter-Strike 2"><div class="caption">Counter-Strike 2 • PC</div></a></div><div class="slide"><a href="detail-4.html"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg" alt="Apex Legends"><div class="caption">Apex Legends • PC</div></a></div><div class="slide"><a href="detail-6.html"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1c4ae7d77e7e61a1/5f61a259d4bdc70f1ca0f4a1/LOL_KEY_ART.jpg" alt="League of Legends"><div class="caption">League of Legends • PC</div></a></div><div class="slide"><a href="detail-8.html"><img src="https://www.pubgmobile.com/images/event/common/share.jpg" alt="PUBG Mobile"><div class="caption">PUBG Mobile • Android</div></a></div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="sbtn prev">◀</button>
+        <button class="sbtn next">▶</button>
+      </div>
+    </section>
+    
+    <footer>Demo original — No aloja descargas; enlaza a páginas oficiales.</footer>
+  </div>
+  <script src="../game.js"></script>
+  <script>
+    initBack();
+    initBreadcrumbs(document.querySelector('h2').textContent);
+    initSlider('#gallerySlider', 3000);
+    initSlider('#relatedSlider', 3500);
+  </script>
+</body>
+</html>
