@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Acerca de — TiendaPlay</title>
+  <link rel="stylesheet" href="acerca.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="index.html">
+        <div class="logo">GG</div>
+        <div>
+          <h1>TiendaPlay</h1>
+          <p>Descargas oficiales — PC & Android</p>
+        </div>
+      </a>
+      <div class="searchbar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.6)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.6)" stroke-width="1.6"/>
+        </svg>
+        <input id="search" type="search" placeholder="Buscar título, género..." />
+        <button class="btn" onclick="location.href='index.html#q='+encodeURIComponent(document.getElementById('search').value)">Buscar</button>
+      </div>
+    </header>
+
+    <nav class="main-menu">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#Android">Juegos Android</a>
+      <a href="index.html#PC">Juegos PC</a>
+      <a href="about.html">Acerca de</a>
+    </nav>
+
+    <section class="about-hero">
+      <h2 style="margin:0">Conoce al equipo</h2>
+      <p class="muted" style="margin:6px 0 0">Somos 3 estudiantes construyendo este proyecto como práctica de desarrollo web — diseño, accesibilidad y UX.</p>
+    </section>
+
+    <section class="team-grid">
+      <article class="card-pro">
+        <div class="pro-head">
+          <div class="avatar"><img src="aristides.png" alt="Avatar Estudiante 1"></div>
+          <div>
+            <h3 class="pro-name">Aristides Hernandez</h3>
+            <p class="pro-role">Frontend & UI</p>
+          </div>
+        </div>
+        <p class="pro-bio">Apasionado por el diseño de interfaces limpias, sistemas de diseño y rendimiento en el navegador. Le encanta trabajar con accesibilidad y microinteracciones.</p>
+        <div class="badges">
+          <span class="badge yellow">HTML</span>
+          <span class="badge purple">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Accesibilidad</span>
+        </div>
+        <div class="skills">
+          <div class="skill"><span>UI</span><span>90%</span></div>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+          <div class="skill"><span>CSS</span><span>88%</span></div>
+          <div class="bar"><div class="fill" style="width:88%"></div></div>
+        </div>
+        <div class="pro-footer">
+          <div class="links">
+            <a href="#" title="GitHub" aria-label="GitHub">GH</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="X/Twitter" aria-label="Twitter">X</a>
+          </div>
+          <a class="cta" href="#">Contactar</a>
+        </div>
+      </article>
+
+      <article class="card-pro">
+        <div class="pro-head">
+          <div class="avatar"><img src="aristides.png" alt="Avatar Estudiante 2"></div>
+          <div>
+            <h3 class="pro-name">Estudiante2</h3>
+            <p class="pro-role">Backend & Datos</p>
+          </div>
+        </div>
+        <p class="pro-bio">Interesado en APIs, optimización y modelos de datos. Le motiva construir arquitecturas escalables y limpias para servir contenido dinámico.</p>
+        <div class="badges">
+          <span class="badge yellow">Node</span>
+          <span class="badge">Python</span>
+          <span class="badge purple">SQL</span>
+          <span class="badge">REST</span>
+        </div>
+        <div class="skills">
+          <div class="skill"><span>APIs</span><span>85%</span></div>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+          <div class="skill"><span>Bases de datos</span><span>80%</span></div>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+        <div class="pro-footer">
+          <div class="links">
+            <a href="#" title="GitHub" aria-label="GitHub">GH</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="X/Twitter" aria-label="Twitter">X</a>
+          </div>
+          <a class="cta" href="#">Contactar</a>
+        </div>
+      </article>
+
+      <article class="card-pro">
+        <div class="pro-head">
+          <div class="avatar"><img src="aristides.png" alt="Avatar Estudiante 3"></div>
+          <div>
+            <h3 class="pro-name">Estudiante3</h3>
+            <p class="pro-role">UX & Investigación</p>
+          </div>
+        </div>
+        <p class="pro-bio">Aplica investigación con usuarios, mapas de viaje y prototipado rápido. Busca productos útiles, accesibles y agradables.</p>
+        <div class="badges">
+          <span class="badge purple">UX</span>
+          <span class="badge yellow">Figma</span>
+          <span class="badge">Usabilidad</span>
+          <span class="badge">Testing</span>
+        </div>
+        <div class="skills">
+          <div class="skill"><span>UX Research</span><span>92%</span></div>
+          <div class="bar"><div class="fill" style="width:92%"></div></div>
+          <div class="skill"><span>Prototipos</span><span>86%</span></div>
+          <div class="bar"><div class="fill" style="width:86%"></div></div>
+        </div>
+        <div class="pro-footer">
+          <div class="links">
+            <a href="#" title="Figma" aria-label="Figma">Fi</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a href="#" title="Behance" aria-label="Behance">Be</a>
+          </div>
+          <a class="cta" href="#">Contactar</a>
+        </div>
+      </article>
+    </section>
+
+    <footer style="margin-top:18px;color:#9aa6bd;font-size:13px;text-align:center">
+      Demo original — No aloja descargas; enlaza a páginas oficiales.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('search').addEventListener('keydown', (e)=>{
+      if(e.key==='Enter'){ location.href='index.html#q='+encodeURIComponent(e.target.value); }
+    });
+  </script>
+</body>
+</html>

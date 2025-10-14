@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda de Juegos — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="index.html">
+        <div class="logo">GG</div>
+        <div>
+          <h1>TiendaPlay</h1>
+          <p>Descargas oficiales — PC & Android</p>
+        </div>
+      </a>
+
+      <div class="searchbar" role="search" aria-label="Buscar juegos">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.6)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.6)" stroke-width="1.6"/>
+        </svg>
+        <input id="search" type="search" placeholder="Buscar título, género..." />
+        <select id="sort" title="Ordenar" aria-label="Ordenar resultados">
+          <option value="popular">Más populares</option>
+          <option value="rating-desc">Mejor valoración</option>
+          <option value="rating-asc">Menor valoración</option>
+          <option value="title-asc">Título A–Z</option>
+          <option value="title-desc">Título Z–A</option>
+        </select>
+      </div>
+
+      <div class="controls">
+        <button class="ghost" id="tabPC" data-platform="PC">PC</button>
+        <button class="ghost" id="tabAndroid" data-platform="Android">Android</button>
+      </div>
+      <nav class="main-menu">
+    <a href="index.html">Inicio</a>
+    <a href="index.html#Android">Juegos Android</a>
+    <a href="index.html#PC">Juegos PC</a>
+    <a href="about.html">Acerca de</a>
+  </nav>
+</header>
+
+    <div class="hero">
+      <div class="left">
+        <h2>Catálogo por plataforma</h2>
+        <p>Descargas directas hacia sitios oficiales. Este es un proyecto educativo con contenidos originales.</p>
+      </div>
+      <div>
+        <button class="btn" id="resetFilters">Limpiar filtros</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="toolbar">
+        <h2 class="toolbar-title">Resultados</h2>
+        <div class="muted" id="resultsInfo">Mostrando 0 juegos</div>
+      </div>
+
+      <section class="products" id="products" aria-live="polite"></section>
+
+      <nav class="pagination" aria-label="Paginación">
+        <button id="prevPage" class="page-btn" disabled>Anterior</button>
+        <span id="pageInfo" class="page-info">Página 1/1</span>
+        <button id="nextPage" class="page-btn" disabled>Siguiente</button>
+      </nav>
+
+      <footer>
+        Pagina creada por Estudiantes de Ingenieria En Ciencias de la computacion UPES 2025
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
