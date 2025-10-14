@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genshin Impact — Tutorial</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><div class="logo">TT</div><div class="title">Tutoriales</div></a>
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#grid">Tutoriales</a>
+      </nav>
+      <div class="search">
+        <input type="search" placeholder="Buscar...">
+        <button class="btn" onclick="location.href='../index.html#grid'">Buscar</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="breadcrumbs"><a href="../index.html">Inicio</a> / <a href="../index.html#grid">Tutoriales</a> / <span>Genshin Impact</span></div>
+
+    <section class="vbg">
+      <video src="https://autopatchcn.yuanshen.com/client_app/download/pc/20200928_6f2a76/Genshin_Impact_Release_Trailer.mp4" autoplay muted loop playsinline></video>
+      <div class="layer">
+        <div class="poster" style="max-width:460px">
+          <img src="https://genshin.hoyoverse.com/_nuxt/img/share.9c5b1f7.jpg" alt="Genshin Impact">
+        </div>
+        <div class="meta">
+          <h2>Genshin Impact</h2>
+          <p><span class="tag">Tutorial</span><span class="tag">Android</span><span class="tag">RPG</span></p>
+          <p class="muted">Guía práctica con video y pasos claros. Este sitio no aloja descargas, solo tutoriales.</p>
+          <a class="btn" href="../index.html#grid">Volver</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="page" style="margin-top:12px">
+      <aside class="toc">
+        <h4>Índice</h4>
+        <a href="#overview">Guía rápida</a>
+        <a href="#video">Video</a>
+        <a href="#gallery">Galería</a>
+        <a href="#setup">Configuración</a>
+        <a href="#tips">Consejos</a>
+      </aside>
+
+      <div>
+        <section id="overview" class="section">
+          <h3>Guía rápida</h3>
+          <ol>
+            <li>Conceptos básicos para empezar en <strong>Genshin Impact</strong>.</li>
+            <li>Modos/clases recomendadas para progresar.</li>
+            <li>Optimiza controles y HUD para tu estilo.</li>
+            <li>Rutas o roles iniciales que facilitan el aprendizaje.</li>
+          </ol>
+        </section>
+
+        <section id="video" class="section">
+          <h3>Video</h3>
+          <video controls playsinline style="width:100%;border-radius:8px;border:1px solid #23425a">
+            <source src="https://autopatchcn.yuanshen.com/client_app/download/pc/20200928_6f2a76/Genshin_Impact_Release_Trailer.mp4" type="video/mp4">
+          </video>
+        </section>
+
+        <section id="gallery" class="section">
+          <h3>Galería</h3>
+          <div class="grid" style="grid-template-columns:repeat(4,1fr)">
+            <img src="https://genshin.hoyoverse.com/_nuxt/img/share.9c5b1f7.jpg" alt="Vista 1" style="width:100%;border-radius:8px;border:1px solid #23425a">
+            <img src="https://genshin.hoyoverse.com/_nuxt/img/share.9c5b1f7.jpg" alt="Vista 2" style="width:100%;border-radius:8px;border:1px solid #23425a">
+            <img src="https://genshin.hoyoverse.com/_nuxt/img/share.9c5b1f7.jpg" alt="Vista 3" style="width:100%;border-radius:8px;border:1px solid #23425a">
+            <img src="https://genshin.hoyoverse.com/_nuxt/img/share.9c5b1f7.jpg" alt="Vista 4" style="width:100%;border-radius:8px;border:1px solid #23425a">
+          </div>
+        </section>
+
+        <section id="setup" class="section">
+          <h3>Configuración</h3>
+          <table>
+      <tr><td>SO</td><td>Android 8.0 o superior</td></tr>
+      <tr><td>CPU</td><td>Octa‑core 1.8 GHz</td></tr>
+      <tr><td>RAM</td><td>4 GB</td></tr>
+      <tr><td>GPU</td><td>Adreno/Mali reciente</td></tr>
+      <tr><td>Almacenamiento</td><td>15–25 GB libres</td></tr>
+    </table>
+        </section>
+
+        <section id="tips" class="section">
+          <h3>Consejos</h3>
+          <ul>
+            <li>Usa sensibilidad y binds consistentes.</li>
+            <li>Reduce post-procesado si buscas FPS estables.</li>
+            <li>Practica rutas/roles hasta consolidar hábitos.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button id="backtop" class="backtop" aria-label="Volver arriba">↑</button>
+  <footer class="footer"><div class="wrap"><p>© Tutoriales — Interfaz inspirada en Steam.</p></div></footer>
+
+  <script type="module">
+    import { initBackTop } from '../shared.js';
+    initBackTop();
+  </script>
+</body>
+</html>
